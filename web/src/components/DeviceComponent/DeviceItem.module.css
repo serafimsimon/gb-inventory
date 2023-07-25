@@ -1,0 +1,36 @@
+.content__device_list {
+    display: inline-grid;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+.card_name {
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.card__device_list {
+    width: 90%;
+    height: 90%;
+    cursor: pointer;
+    border: #4f4f4f;
+}
+
+.image__device_list {
+    width: 150px;
+    height: 150px;
+}
+
+/*.card__btn {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    margin-top: 5px;*/
+/*}*/
+
+/*.card__btn_content {*/
+/*    width: 100px;*/
+/*    */
+/*}*/

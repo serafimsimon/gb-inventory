@@ -1,0 +1,39 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: department
+          uri: http://localhost:8081
+          predicates:
+            - Path=/department/**
+          filters:
+            - StripPrefix=1
+        - id: itactive
+          uri: http://localhost:8082
+          predicates:
+            - Path=/itactive/**
+          filters:
+            - StripPrefix=1
+        - id: job
+          uri: http://localhost:8083
+          predicates:
+            - Path=/job/**
+          filters:
+            - StripPrefix=1
+        - id: order
+          uri: http://localhost:8084
+          predicates:
+            - Path=/order/**
+          filters:
+            - StripPrefix=1
+        - id: user
+          uri: http://localhost:8085
+          predicates:
+            - Path=/user/**
+          filters:
+            - StripPrefix=1

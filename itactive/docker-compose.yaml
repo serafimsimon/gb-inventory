@@ -1,0 +1,26 @@
+#version: '3.8'
+#services:
+#  postgres:
+#    container_name: db
+#    image: postgres:15
+#    environment:
+#      - POSTGRES_DB=test
+#      - POSTGRES_USER=user
+#      - POSTGRES_PASSWORD=123456
+#    ports:
+#      - 5433:5432
+#    networks:
+#      - test-net
+#
+#  test_service:
+#    container_name: example
+#    build:
+#      context: .
+#      Dockerfile: ./Dockerfile
+#    ports:
+#      - 8081:8080
+#    networks:
+#      - test-net
+#    restart: always
+#    depends_on:
+#      - postgres

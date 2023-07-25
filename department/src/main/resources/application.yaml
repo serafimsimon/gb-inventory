@@ -1,0 +1,27 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /departments
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/departments
+    driver-class-name: org.postgresql.Driver
+    username: root
+    password: 123
+  jpa:
+    database: postgresql
+    show-sql: true
+  sql:
+    init:
+      mode: always
+  #    schema-locations: classpath*:database/initDB.sql
+  #    data-locations: classpath*:populateDB.sql
+
+integrations:
+  user-service:
+    url: http://localhost:8085/user/
+    read-timeout: 10000
+    write-timeout: 5000
+    connect-timeout: 5000

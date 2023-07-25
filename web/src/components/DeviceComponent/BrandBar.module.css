@@ -1,0 +1,46 @@
+.content__brand {
+    padding-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+}
+
+.card__brand {
+    cursor: pointer;
+    margin-right: 3px;
+    padding: 10px;
+    border: 2px solid teal;
+    border-radius: 5px;
+}
+
+.card__brand:hover {
+    color: white;
+    background-color: teal;
+}
+
+.content__condition {
+    display: flex;
+    padding-top: 18px;
+    justify-content: center;
+
+
+}
+
+.card__condition {
+    cursor: pointer;
+    margin-right: 3px;
+    padding: 10px;
+    border: 2px solid teal;
+    border-radius: 5px;
+    color: white;
+    background-color: teal;
+
+}
+
+
+.card__condition:hover {
+    border: 2px solid teal;
+    color: #4f4f4f;
+     background-color: white;
+}

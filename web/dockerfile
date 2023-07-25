@@ -1,0 +1,12 @@
+FROM node:18.16.0
+WORKDIR ./web
+COPY ./web/package.json .
+COPY ./web/package-lock.json .
+RUN npm install\
+    && npm i axios react-router-dom mobx mobx-react-lite\
+    && npm install react-bootstrap bootstrap\
+    && npm i jwt-decode\
+    && npm run build
+COPY ../web .
+EXPOSE 5000
+CMD ["npm", "start"]
